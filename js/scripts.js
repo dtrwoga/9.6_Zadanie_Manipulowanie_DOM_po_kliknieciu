@@ -3,9 +3,9 @@ var list = document.getElementById('list');
 var add = document.getElementById('addElem');
 add.addEventListener('click', function() {
   var element = document.createElement('li');
-  var itemsByTagName = document.getElementsByTagName('li');
+  var itemsByTagName = list.getElementsByTagName('li');
   console.log(itemsByTagName.length);
-  element.innerHTML = 'item' + itemsByTagName.length;
+  element.innerHTML = 'item ' + itemsByTagName.length;
   list.appendChild(element);
 });
 
